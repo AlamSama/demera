@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/swiper.min.css">
+    <link rel="stylesheet" href="./src/aos-master/dist/aos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>demera</title>
+</head>
+
+<body>
+    <div
+        class="bg-teal-950 w-full py-2 lg:py-3 2xl:px-24 2xl:py-4 flex justify-between items-center px-5 md:px-6 shadow-md shadow-teal-950 z-50 fixed top-0">
+        <h3 class="text-white text-xl 2xl:text-2xl font-bold">DEMERA</h3>
+        <ul id="menu"
+            class="fixed text-white text-lg 2xl:text-xl bg-teal-950 left-[-100%] transition-all w-full bottom-0 z-10 top-[55px] min-h-[100%] px-4 py-6 lg:bg-transparent lg:static lg:flex lg:justify-around lg:py-0 lg:px-0 lg:w-[40%] xl:w-[35%]">
+            <li>
+                <a class="my-5 lg:my-0 hover:bg-teal-800 py-1 px-2 lg:px-4 rounded-md" href="#" data-link="#link1">Home</a>
+            </li>
+            <li>
+                <a class="my-5 lg:my-0 hover:bg-teal-800 py-1 px-2 lg:px-4 rounded-md" href="#" data-link="#link2">Menu</a>
+            </li>
+            <li>
+                <a class="my-5 lg:my-0 hover:bg-teal-800 py-1 px-2 lg:px-4 rounded-md" href="#" data-link="#link3">About</a>
+            </li>
+            <li>
+                <a class="my-5 lg:my-0 hover:bg-teal-800 py-1 px-2 lg:px-4 rounded-md" href="#" data-link="#link4">Galery</a>
+            </li>
+            <li>
+                <a class="my-5 lg:my-0 hover:bg-teal-800 py-1 px-2 lg:px-4 rounded-md" href="#" data-link="#link5">Contact</a>
+            </li>
+        </ul>
+        <div id="bar" class="lg:hidden cursor-pointer">
+            <div id="childBar1" class="w-7 h-[3px] my-[6px] transition-all bg-white"></div>
+            <div id="childBar2" class="w-7 h-[3px] my-[6px] transition-all bg-white"></div>
+            <div id="childBar3" class="w-7 h-[3px] my-[6px] transition-all bg-white"></div>
+        </div>
+    </div>
+
+
+
+    <div id="link1" class="bg-white w-full relative overflow-hidden h-[80vh] md:h-[100vh] font-Russo">
+        <div class="absolute bg-teal-950 w-full h-[100px] md:h-[150px] lg:h-[100px] 2xl:h-[110px] bottom-0 z-10"></div>
+
+        
+        <div class="pt-[40px] md:pt-[60px] 2xl:pt-[70px]">
+            <h3 class="font-extrabold text-center text-teal-950 mt-6 mb-4 md:my-6 md:text-lg xl:text-xl">demera corps</h3>
+            <div class="px-4 2xl:mt-6">
+                <h3 class="text-teal-950 text-center text-2xl md:text-5xl 2xl:text-7xl font-extrabold">
+                    WHENEVER WHEREVER
+                </h3>
+                <p class="text-center text-teal-950 md:text-2xl lg:text-xl 2xl:text-2xl mt-2 2xl:mt-2">
+                    Beli Makanan Apapun Di Semua Outlets Demera Dan Dapatkan Rewards 1 Minuman Type Chocholate</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="absolute bottom-72 md:bottom-[60%] md:left-20 lg:bottom-[40%] lg:left-8 xl:bottom-[40%] xl:left-32 w-[200px] 2xl:left-72 rotate-[-30deg] h-[150px]">
+                <div class="bg-teal-950 w-[80px] h-[80px] md:w-[150px] md:h-[150px] 2xl:w-[180px] 2xl:h-[180px] rounded-full opacity-70 md:opacity-60 blur-md absolute top-0"></div>
+                <div class="bg-teal-950 w-[80px] h-[80px] md:w-[150px] md:h-[150px] 2xl:w-[180px] 2xl:h-[180px] rounded-full opacity-70 md:opacity-60 blur-md absolute left-12 z-10"></div>
+            </div>
+    
+            <div class="absolute bottom-[55%] md:bottom-[70%] right-0 rotate-45 w-[200px] h-[150px] lg:bottom-52 2xl:bottom-[60%] 2xl:right-[650px]">
+                <div class="bg-teal-950 w-[80px] h-[80px] md:w-[150px] md:h-[150px] 2xl:w-[200px] 2xl:h-[200px] rounded-full opacity-70 md:opacity-60 blur-md absolute top-0"></div>
+                <div class="bg-teal-950 w-[80px] h-[80px] md:w-[150px] md:h-[150px] 2xl:w-[200px] 2xl:h-[200px] rounded-full opacity-70 md:opacity-60 blur-md absolute left-12 z-10"></div>
+            </div>
+    
+            <div class="absolute right-0 bottom-44 md:bottom-[40%] md:right-32 w-[200px] h-[150px] lg:right-72 lg:bottom-[55%] 2xl:bottom-[20%]">
+                <div class="bg-teal-950 w-[80px] h-[80px] md:w-[150px] md:h-[150px] 2xl:w-[180px] 2xl:h-[180px] rounded-full opacity-70 md:opacity-60 blur-md absolute top-0"></div>
+                <div class="bg-teal-950 w-[80px] h-[80px] md:w-[150px] md:h-[150px] 2xl:w-[180px] 2xl:h-[180px] rounded-full opacity-70 md:opacity-60 blur-md absolute left-12 z-10"></div>
+            </div>
+        </div>
+
+        <div class="swiper2 px-[22%] pt-[10%] md:px-[28%] md:pt-[13%] lg:pt-[5%] lg:px-[34%] xl:pt-[5%] xl:px-[38%] 2xl:pt-[2%] 2xl:px-[40%]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./src/img/hero/milkshake_cokelat_spesial_1_prev_ui.png" alt="" class="min-w-[220px] md:min-w-[370px] lg:min-w-[330px] xl:w-[250px] 2xl:min-w-[400px] h-full"></div>
+                <div class="swiper-slide"><img src="./src/img/hero/milkshake_strawberry_spesial_1_(5)_prev_ui.png" alt="" class="min-w-[220px] md:min-w-[370px] lg:min-w-[330px] xl:w-[250px] 2xl:min-w-[400px] h-full"></div>
+                <div class="swiper-slide"><img src="./src/img/hero/milkshake_vanilla_spesial_1_prev_ui.png" alt="" class="min-w-[220px] md:min-w-[370px] lg:min-w-[330px] xl:w-[250px] 2xl:min-w-[400px] h-full"></div>
+                <div class="swiper-slide"><img src="./src/img/hero/orange_float_1_prev_ui.png" alt="" class="min-w-[220px] md:min-w-[370px] lg:min-w-[330px] xl:w-[250px] 2xl:min-w-[400px] h-full"></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="justify-center flex">
+                <div
+                    class="absolute w-[350px] h-[350px] bottom-6 md:h-[600px] md:w-[600px] md:bottom-12 lg:w-[700px] lg:h-[700px] lg:bottom-[-100px] xl:w-[700px] xl:h-[700px] xl:bottom-[-200px] 2xl:w-[900px] 2xl:h-[700px] 2xl:bottom-[-90px]">
+                    <img src="./src/img/hand.png" alt="" class="w-full h-full">
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="absolute bottom-6 md:bottom-12 lg:bottom-6 w-full z-10">
+            <div class="flex justify-center gap-6 md:gap-9 2xl:gap-16">
+                <button
+                    class="bg-transparent border-2 border-white py-[6px] px-3 md:py-3 text-white hover:bg-white hover:text-teal-950 transition-all -skew-x-12 lg:py-2 xl:px-6 2xl:text-xl">
+                    Explore Now</button>
+                <a href="#" data-link="#link2" class="bg-teal-950 border-l-2 border-white py-[6px] px-3 md:py-3 text-white -skew-x-12 lg:py-2 xl:px-6 relative after:content[''] after:absolute after:bottom-0 after:left-[12%] after:w-0 after:bg-white after:h-1 after:hover:w-[80%] after:transition-all 2xl:text-xl">Lihat
+                    Menu</a>
+            </div>
+        </div>
+    </div>
+
+
+    <img src="./src/img/wave.svg" alt="" class="w-full rotate-180">
+
+
+
+    <h3 class="text-center text-2xl font-medium text-teal-950 md:text-3xl lg:text-4xl font-Russo">Cara
+        Pemesanan
+    </h3>
+    <div class="mt-12 px-2 md:px-16 2xl:px-[400px] 2xl:mt-24">
+        <div class="flex items-center my-12 md:my-8 md:gap-3 2xl:gap-12">
+            <div class="relative w-[130px]">
+                <div class="flex justify-center w-[130px]" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="relative">
+                        <div
+                            class="w-[80px] h-[80px] md:w-[130px] md:h-[130px] 2xl:w-[150px] 2xl:h-[150px] rounded-full bg-teal-950">
+                        </div>
+                        <div
+                            class="absolute top-[-3px] right-[-3px] md:top-[5px] bg-teal-950 w-[25px] h-[25px] 2xl:w-[30px] 2xl:h-[30px] rounded-full text-white text-center border-2 border-white">
+                            1
+                        </div>
+                    </div>
+                </div>
+                <img src="./src/img/icons/pesan1.png" alt="" data-aos="zoom-in" data-aos-delay="300"
+                    class="w-[70px] h-[70px] md:w-[100px] md:h-[100px] 2xl:w-[130px] 2xl:h-[130px] 2xl:left-0 object-cover absolute top-6 left-[23%] md:left-[12%]">
+            </div>
+            <div class="w-full">
+                <h3 class="font-medium md:text-xl md:font-bold 2xl:text-2xl">Pergi Ke Outlet DEMERA</h3>
+                <p class="text-sm md:text-lg md:font-medium 2xl:text-xl" data-aos="fade-right" data-aos-delay="700">
+                    Pergi ke outlet DEMERA terdekat di kota kalian</p>
+            </div>
+        </div>
+
+        <div class="flex items-center my-12 md:my-8 md:gap-3 2xl:gap-12">
+            <div class="w-full text-end">
+                <h3 class="font-medium md:text-xl 2xl:text-2xl md:font-bold">Pilih Tempat</h3>
+                <p class="text-sm md:text-lg 2xl:text-xl md:font-medium" data-aos="fade-left" data-aos-delay="700">Pilih
+                    tempat yang kosong lemudian tekan tombol yang ada di meja maka pelayan akan segera datang</p>
+            </div>
+            <div class="relative w-[130px]">
+                <div class="flex justify-center w-[130px]" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="relative">
+                        <div
+                            class="w-[80px] h-[80px] md:w-[130px] md:h-[130px] 2xl:w-[150px] 2xl:h-[150px] rounded-full bg-teal-950">
+                        </div>
+                        <div
+                            class="absolute top-[-3px] right-[-3px] md:top-[5px] bg-teal-950 w-[25px] h-[25px] 2xl:w-[30px] 2xl:h-[30px] rounded-full text-white text-center border-2 border-white">
+                            2
+                        </div>
+                    </div>
+                </div>
+                <img src="./src/img/icons/pesan2.png" data-aos="zoom-in" data-aos-delay="300" alt=""
+                    class="w-[100px] h-full 2xl:w-[150px] 2xl:h-[150px] 2xl:left-0 object-cover absolute top-4 left-[10%] md:left-[12%]">
+            </div>
+        </div>
+
+
+        <div class="flex items-center my-12 md:my-8 md:gap-3 2xl:gap-12">
+            <div class="relative w-[130px]">
+                <div class="flex justify-center w-[130px]" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="relative">
+                        <div
+                            class="w-[80px] h-[80px] md:w-[130px] md:h-[130px] 2xl:w-[150px] 2xl:h-[150px] rounded-full bg-teal-950">
+                        </div>
+                        <div
+                            class="absolute top-[-3px] md:top-[5px] right-[-3px] bg-teal-950 w-[25px] h-[25px] 2xl:w-[30px] 2xl:h-[30px] rounded-full text-white text-center border-2 border-white">
+                            3
+                        </div>
+                    </div>
+                </div>
+                <img src="./src/img/icons/pesan3.png" alt="" data-aos="zoom-in" data-aos-delay="300"
+                    class="w-[70px] h-[70px] md:w-[100px] md:h-[100px] 2xl:w-[130px] 2xl:h-[130px] 2xl:left-0 object-cover absolute top-6 left-[20%] md:left-[10%]">
+            </div>
+            <div class="w-full">
+                <h3 class="font-medium md:text-xl md:font-bold 2xl:text-2xl">Pesan Menu</h3>
+                <p class="text-sm md:text-lg 2xl:text-xl md:font-medium" data-aos="fade-right" data-aos-delay="700">
+                    Pesan menu yang diinginkan dan tunggu pesanan anda selesai</p>
+            </div>
+        </div>
+
+        <div class="flex items-center my-12 md:my-8 md:gap-3 2xl:gap-12">
+            <div class="w-full text-end">
+                <h3 class="font-medium md:text-xl 2xl:text-2xl md:font-bold">Terima Pesanan</h3>
+                <p class="text-sm md:text-lg 2xl:text-xl md:font-medium" data-aos="fade-right" data-aos-delay="700">
+                    Terima pesanan menu dan selamat menikmati</p>
+            </div>
+            <div class="relative w-[130px]">
+                <div class="flex justify-center w-[130px]" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="relative">
+                        <div class="w-[80px] h-[80px] md:w-[130px] md:h-[130px] rounded-full bg-teal-950"></div>
+                        <div
+                            class="absolute top-[-3px] md:top-[5px] right-[-3px] bg-teal-950 w-[25px] h-[25px] 2xl:w-[30px] 2xl:h-[30px] rounded-full text-white text-center border-2 border-white">
+                            4
+                        </div>
+                    </div>
+                </div>
+                <img src="./src/img/icons/pesan4.png" alt="" data-aos="zoom-in" data-aos-duration="300"
+                    class="w-[90px] h-full md:w-[110px] md:h-[110px] 2xl:w-[130px] 2xl:h-[130px] 2xl:left-0 object-cover absolute top-4 left-[10%]">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-teal-950 w-full h-[100px] md:h-[200px] mt-28 mb-20 bg-cover" id="parallax1"
+        style="background-image: url('./src/img/pexels-pixabay-414144.jpg');"></div>
+
+    <h3 id="link2" class="text-center text-2xl font-medium font-Russo text-teal-950 md:text-3xl md:mt-32 lg:text-4xl">
+        Menu
+    </h3>
+    <div class="md:px-16 2xl:mt-16 overflow-hidden">
+        <div class="flex justify-center mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 2xl:gap-20">
+                <div class="bg-teal-950 p-4" data-aos="fade-left" data-aos-duration="500">
+                    <div
+                        class="w-[300px] h-[300px] md:w-full md:h-full 2xl:w-[330px] 2xl:h-[350px] overflow-hidden relative group">
+                        <img src="./src/img/meat-1155132_1280.jpg" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] -translate-x-[100%] group-hover:-translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] translate-x-[100%] group-hover:translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] translate-x-[100%] group-hover:-translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] -translate-x-[100%] group-hover:translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute top-[20%] md:top-[10%] text-center text-white group-hover:scale-100 transition-all opacity-0 group-hover:opacity-100 scale-150">
+                            <h3 class="text-lg font-medium 2xl:text-2xl">
+                                Hamburger chest</h3>
+                            <p class="px-2 mt-12 md:mt-4 md:text-sm 2xl:text-xl">
+                                Lorem ipsum
+                                dolor
+                                sit, amet consectetur adipisicing elit. Repudiandae fuga tempora modi saepe quaerat
+                                harum.
+                                Corrupti facilis aperiam iste officia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-teal-950 p-4" data-aos="fade-down" data-aos-duration="500">
+                    <div
+                        class="w-[300px] h-[300px] md:w-full md:h-full 2xl:w-[330px] 2xl:h-[350px] overflow-hidden relative group">
+                        <img src="./src/img/blueberries-1867398_1280.jpg" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] -translate-x-[100%] group-hover:-translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] translate-x-[100%] group-hover:translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] translate-x-[100%] group-hover:-translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] -translate-x-[100%] group-hover:translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute top-[20%] md:top-[10%] text-center text-white group-hover:scale-100 transition-all opacity-0 group-hover:opacity-100 scale-150">
+                            <h3 class="text-lg font-medium 2xl:text-2xl">
+                                Blueberries Cookies</h3>
+                            <p class="px-2 mt-12 md:mt-4 md:text-sm 2xl:text-xl">
+                                Lorem ipsum
+                                dolor
+                                sit, amet consectetur adipisicing elit. Repudiandae fuga tempora modi saepe quaerat
+                                harum.
+                                Corrupti facilis aperiam iste officia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-teal-950 p-4" data-aos="fade-right" data-aos-duration="500">
+                    <div
+                        class="w-[300px] h-[300px] md:w-full md:h-full 2xl:w-[330px] 2xl:h-[350px] overflow-hidden relative group">
+                        <img src="./src/img/loaf-4957679_1280.jpg" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] -translate-x-[100%] group-hover:-translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] translate-x-[100%] group-hover:translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] translate-x-[100%] group-hover:-translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] -translate-x-[100%] group-hover:translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute top-[20%] md:top-[10%] text-center text-white group-hover:scale-100 transition-all opacity-0 group-hover:opacity-100 scale-150">
+                            <h3 class="text-lg font-medium 2xl:text-2xl">Loaf
+                                Goat
+                            </h3>
+                            <p class="px-2 mt-12 md:mt-4 md:text-sm 2xl:text-xl">
+                                Lorem ipsum
+                                dolor
+                                sit amet consectetur adipisicing elit. Ipsum soluta fuga sequi distinctio. Tempore sequi
+                                fuga
+                                soluta nisi expedita quam, rerum corporis officia consectetur error adipisci? Odit autem
+                                est
+                                quasi nesciunt. Eos sint incidunt deleniti dignissimos quos consequatur et animi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-6 2xl:mt-24">
+            <div class="grid md:grid-rows-2 md:grid-cols-4 gap-6 md:gap-4 2xl:gap-20">
+
+                <div class="bg-teal-950 p-4 md:row-span-2 md:col-span-2" data-aos="fade-right" data-aos-duration="500">
+                    <div class="w-[300px] h-[300px] md:w-full md:h-full 2xl:w-[550px] overflow-hidden relative group">
+                        <img src="./src/img/hamburger-1238246_1280.jpg" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] -translate-x-[100%] group-hover:-translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] translate-x-[100%] group-hover:translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] translate-x-[100%] group-hover:-translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] -translate-x-[100%] group-hover:translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute top-[20%] md:top-[30%] text-center text-white group-hover:scale-100 transition-all opacity-0 group-hover:opacity-100 scale-150">
+                            <h3 class="text-lg font-medium 2xl:text-2xl">
+                                Hamburger chest</h3>
+                            <p class="px-2 mt-12 md:mt-4 md:text-sm 2xl:text-xl">
+                                Lorem ipsum
+                                dolor
+                                sit, amet consectetur adipisicing elit. Repudiandae fuga tempora modi saepe quaerat
+                                harum.
+                                Corrupti facilis aperiam iste officia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-teal-950 p-4 md:row-span-1 md:col-span-2" data-aos="fade-up" data-aos-duration="500">
+                    <div
+                        class="w-[300px] h-[300px] md:w-full md:h-[180px] xl:h-[250px] 2xl:w-[550px] overflow-hidden relative group">
+                        <img src="./src/img/pexels-pixabay-414144.jpg" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] -translate-x-[100%] group-hover:-translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] translate-x-[100%] group-hover:translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] translate-x-[100%] group-hover:-translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] -translate-x-[100%] group-hover:translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute top-[20%] md:top-[10%] text-center text-white group-hover:scale-100 transition-all opacity-0 group-hover:opacity-100 scale-150">
+                            <h3 class="text-lg font-medium 2xl:text-2xl">
+                                Hamburger chest</h3>
+                            <p class="px-2 mt-12 md:mt-4 md:text-sm 2xl:text-xl">
+                                Lorem ipsum
+                                dolor
+                                sit, amet consectetur adipisicing elit. Repudiandae fuga tempora modi saepe quaerat
+                                harum.
+                                Corrupti facilis aperiam iste officia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-teal-950 p-4 md:row-span-1 md:col-span-2" data-aos="fade-down" data-aos-duration="500">
+                    <div
+                        class="w-[300px] h-[300px] md:w-full md:h-[180px] xl:h-[250px] 2xl:w-[550px] overflow-hidden relative group">
+                        <img src="./src/img/hamburger-1238246_1280.jpg" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] -translate-x-[100%] group-hover:-translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] translate-x-[100%] group-hover:translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] translate-x-[100%] group-hover:-translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] -translate-x-[100%] group-hover:translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute top-[20%] md:top-[10%] text-center text-white group-hover:scale-100 transition-all opacity-0 group-hover:opacity-100 scale-150">
+                            <h3 class="text-lg font-medium 2xl:text-2xl">
+                                Hamburger chest</h3>
+                            <p class="px-2 mt-12 md:mt-4 md:text-sm 2xl:text-xl">
+                                Lorem ipsum
+                                dolor
+                                sit, amet consectetur adipisicing elit. Repudiandae fuga tempora modi saepe quaerat
+                                harum.
+                                Corrupti facilis aperiam iste officia.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-6 2xl:mt-24">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 2xl:gap-20">
+                <div class="bg-teal-950 p-4" data-aos="fade-right" data-aos-duration="500">
+                    <div
+                        class="w-[300px] h-[300px] md:w-full md:h-full 2xl:w-[330px] 2xl:h-[350px] overflow-hidden relative group">
+                        <img src="./src/img/muffins-2225091_1280.jpg" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] -translate-x-[100%] group-hover:-translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] translate-x-[100%] group-hover:translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] translate-x-[100%] group-hover:-translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] -translate-x-[100%] group-hover:translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute top-[20%] md:top-[10%] text-center text-white group-hover:scale-100 transition-all opacity-0 group-hover:opacity-100 scale-150">
+                            <h3 class="text-lg font-medium 2xl:text-2xl">
+                                Hamburger chest</h3>
+                            <p class="px-2 mt-12 md:mt-4 md:text-sm 2xl:text-xl">
+                                Lorem ipsum
+                                dolor
+                                sit, amet consectetur adipisicing elit. Repudiandae fuga tempora modi saepe quaerat
+                                harum.
+                                Corrupti facilis aperiam iste officia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-teal-950 p-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
+                    <div
+                        class="w-[300px] h-[300px] md:w-full md:h-full 2xl:w-[330px] 2xl:h-[350px] overflow-hidden relative group">
+                        <img src="./src/img/blueberries-1867398_1280.jpg" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] -translate-x-[100%] group-hover:-translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] translate-x-[100%] group-hover:translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] translate-x-[100%] group-hover:-translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] -translate-x-[100%] group-hover:translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute top-[20%] md:top-[10%] text-center text-white group-hover:scale-100 transition-all opacity-0 group-hover:opacity-100 scale-150">
+                            <h3 class="text-lg font-medium 2xl:text-2xl">
+                                Blueberries Cookies</h3>
+                            <p class="px-2 mt-12 md:mt-4 md:text-sm 2xl:text-xl">
+                                Lorem ipsum
+                                dolor
+                                sit, amet consectetur adipisicing elit. Repudiandae fuga tempora modi saepe quaerat
+                                harum.
+                                Corrupti facilis aperiam iste officia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-teal-950 p-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="700">
+                    <div
+                        class="w-[300px] h-[300px] md:w-full md:h-full 2xl:w-[330px] 2xl:h-[350px] overflow-hidden relative group">
+                        <img src="./src/img/nougat-3078581_1280.jpg" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] -translate-x-[100%] group-hover:-translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] translate-x-[100%] group-hover:translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] translate-x-[100%] group-hover:-translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] -translate-x-[100%] group-hover:translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute top-[20%] md:top-[10%] text-center text-white group-hover:scale-100 transition-all opacity-0 group-hover:opacity-100 scale-150">
+                            <h3 class="text-lg font-medium 2xl:text-2xl">Loaf
+                                Goat
+                            </h3>
+                            <p class="px-2 mt-12 md:mt-4 md:text-sm 2xl:text-xl">
+                                Lorem ipsum
+                                dolor
+                                sit amet consectetur adipisicing elit. Ipsum soluta fuga sequi distinctio. Tempore sequi
+                                fuga
+                                soluta nisi expedita quam, rerum corporis officia consectetur error adipisci? Odit autem
+                                est
+                                quasi nesciunt. Eos sint incidunt deleniti dignissimos quos consequatur et animi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-6 2xl:mt-24">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 2xl:gap-20">
+                <div class="bg-teal-950 p-4 md:col-span-1" data-aos="flip-right" data-aos-duration="500">
+                    <div
+                        class="w-[300px] h-[300px] md:w-full md:h-[250px] xl:h-[300px] 2xl:w-[330px] 2xl:h-[350px] overflow-hidden relative group">
+                        <img src="./src/img/hamburger-1238246_1280.jpg" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] -translate-x-[100%] group-hover:-translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] translate-x-[100%] group-hover:translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] translate-x-[100%] group-hover:-translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] -translate-x-[100%] group-hover:translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute top-[20%] md:top-[10%] text-center text-white group-hover:scale-100 transition-all opacity-0 group-hover:opacity-100 scale-150">
+                            <h3 class="text-lg font-medium 2xl:text-2xl">
+                                Hamburger chest</h3>
+                            <p class="px-2 mt-12 md:mt-4 md:text-sm 2xl:text-xl">
+                                Lorem ipsum
+                                dolor
+                                sit, amet consectetur adipisicing elit. Repudiandae fuga tempora modi saepe quaerat
+                                harum.
+                                Corrupti facilis aperiam iste officia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-teal-950 p-4 md:col-span-2" data-aos="fade-right" data-aos-duration="500"
+                    data-aos-delay="300">
+                    <div
+                        class="w-[300px] h-[300px] md:w-full md:h-[250px] xl:h-[300px] 2xl:h-[350px] overflow-hidden relative group">
+                        <img src="./src/img/blueberries-1867398_1280.jpg" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] -translate-x-[100%] group-hover:-translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] translate-x-[100%] group-hover:translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 -translate-y-[100%] translate-x-[100%] group-hover:-translate-y-[50%] group-hover:translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute w-full h-full bg-teal-950 bg-opacity-80 top-0 left-0 transition-all duration-500 translate-y-[100%] -translate-x-[100%] group-hover:translate-y-[50%] group-hover:-translate-x-[50%]">
+                        </div>
+                        <div
+                            class="absolute top-[20%] md:top-[10%] text-center text-white group-hover:scale-100 transition-all opacity-0 group-hover:opacity-100 scale-150">
+                            <h3 class="text-lg font-medium 2xl:text-2xl">
+                                Blueberries Cookies</h3>
+                            <p class="px-2 mt-12 md:mt-4 md:text-sm 2xl:text-xl">
+                                Lorem ipsum
+                                dolor
+                                sit, amet consectetur adipisicing elit. Repudiandae fuga tempora modi saepe quaerat
+                                harum.
+                                Corrupti facilis aperiam iste officia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-teal-950 w-full h-[100px] md:h-[200px] mt-28 mb-20 bg-cover" id="parallax2"
+        style="background-image: url('./src/img/pexels-pixabay-414144.jpg');"></div>
+    <h3 id="link3" class="text-center text-2xl font-medium font-Russo text-teal-950 md:text-3xl md:mt-32 lg:text-4xl"
+        data-aos="fade-up" data-aos-duration="1000">About
+    </h3>
+    <div class="mt-6 2xl:mt-16 px-4 md:px-16 2xl:px-[400px]">
+        <h3 class="text-justify md:text-xl 2xl:text-2xl" data-aos="fade-down" data-aos-duration="1000">Lorem ipsum
+            dolor, sit amet consectetur adipisicing elit. Harum sit iusto
+            nesciunt
+            corporis amet? Quaerat
+            reiciendis doloremque nihil architecto voluptate voluptatibus hic repellendus eligendi, accusantium est
+            sapiente asperiores enim corporis molestias quasi excepturi culpa in tempore iusto maiores assumenda
+            delectus vero fugiat minus. Beatae adipisci architecto perspiciatis dolore! Minus, quos!</h3>
+
+        <h3 class="font-bold text-center text-2xl lg:hidden mt-12">Visi</h3>
+        <div class="flex lg:justify-around gap-2 md:gap-4 mt-5 lg:mt-12">
+            <div class="lg:w-[400px] lg:h-[450px] group overflow-hidden relative" data-aos="fade-right"
+                data-aos-duration="1000">
+                <img src="./src/img/muffins-2225091_1280.jpg" alt=""
+                    class="w-full h-full object-cover group-hover:scale-125 transition-all">
+                <div
+                    class="absolute w-full h-full top-0 left-0 bg-teal-950 bg-opacity-0 transition-all hover:bg-opacity-50">
+                </div>
+            </div>
+            <div class="lg:w-1/2" data-aos="fade-down" data-aos-duration="1000">
+                <h3 class="font-bold text-center text-2xl 2xl:text-3xl mt-12 hidden lg:block">Visi</h3>
+                <p class="text-justify lg:mt-4 md:text-xl lg:text-start 2xl:text-2xl">Lorem ipsum dolor, sit amet
+                    consectetur
+                    adipisicing elit. Mollitia vitae
+                    rerum nemo enim quaerat eligendi ut laboriosam eos odio modi excepturi voluptates dolore facere,
+                    dolorum libero asperiores quibusdam obcaecati sunt.!</p>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <h3 class="font-bold mt-2 text-center text-2xl 2xl:text-3xl" data-aos="fade-down" data-aos-duration="1000">
+                Misi</h3>
+            <p class="text-center md:text-xl mt-5 2xl:text-2xl" data-aos="fade-up" data-aos-duration="1000">Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Ipsam iusto
+                iste
+                necessitatibus deserunt
+                aliquam saepe distinctio nam repellat? Ad cupiditate commodi minus eaque aliquam alias itaque
+                perferendis libero, illum vero.</p>
+            <div class="flex gap-1 mt-4 2xl:mt-10 2xl:gap-12">
+                <div class="overflow-hidden relative group w-1/2" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="./src/img/nougat-3078581_1280.jpg" alt=""
+                        class="object-cover h-full w-full group-hover:scale-125 transition-all">
+                    <div
+                        class="absolute w-full h-full top-0 left-0 bg-teal-950 bg-opacity-0 transition-all hover:bg-opacity-50">
+                    </div>
+                </div>
+                <div class="overflow-hidden relative group w-1/2" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./src/img/muffins-2225091_1280.jpg" alt=""
+                        class="object-cover w-full h-full group-hover:scale-125 transition-all">
+                    <div
+                        class="absolute w-full h-full top-0 left-0 bg-teal-950 bg-opacity-0 transition-all hover:bg-opacity-50">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <h3 class="mt-16 text-center text-2xl font-medium font-Russo text-teal-950 md:text-3xl md:mt-32 lg:text-4xl">Outlets
+    </h3>
+    <div
+        class="mt-6 2xl:mt-16 px-4 md:px-16 2xl:px-[400px] text-center text-lg md:grid md:grid-cols-2 gap-3 overflow-hidden">
+        <div class="my-6">
+            <h3 data-aos="fade-left"
+                class="cursor-pointer py-1 bg-teal-950 text-xl hover:bg-teal-900 font-medium text-white rounded-md 2xl:text-xl 2xl:py-2"
+                onclick="outlets('jakarta')">Jakarta</h3>
+            <div class="overflow-hidden transition-all max-h-0 mt-2" id="jakarta">
+                <img src="./src/img/pexels-pixabay-414144.jpg" alt="" class="object-cover w-full h-[200px]">
+                <p>Jl. Tebet Raya No.35, RW.2, Tebet Timur, Kec. Tebet</p>
+                <img src="./src/img/pexels-pixabay-414144.jpg" alt="" class="mt-4 object-cover w-full h-[200px]">
+                <p class="2xl:text-xl 2xl:font-medium">Jl. Gatot Subroto Barat No.338, Dauh Puri Kaja, Kec. Denpasar
+                    Utara</p>
+            </div>
+        </div>
+        <div class="my-6">
+            <h3 data-aos="fade-right" data-aos-delay="300"
+                class="cursor-pointer py-1 bg-teal-950 text-xl hover:bg-teal-900 font-medium text-white rounded-md 2xl:text-xl 2xl:py-2"
+                onclick="outlets('yogyakarta')">Yogyakarta</h3>
+            <div class="overflow-hidden transition-all max-h-0 mt-2" id="yogyakarta">
+                <img src="./src/img/pexels-pixabay-414144.jpg" alt="" class="object-cover w-full h-[200px]">
+                <p class="2xl:text-xl 2xl:font-medium">Jl. Krasak Timur No.13, Kotabaru, Kec. Gondokusuman</p>
+            </div>
+        </div>
+        <div class="my-6">
+            <h3 data-aos="fade-left" data-aos-delay="500"
+                class="cursor-pointer py-1 bg-teal-950 text-xl hover:bg-teal-900 font-medium text-white rounded-md 2xl:text-xl 2xl:py-2"
+                onclick="outlets('surabaya')">Surabaya</h3>
+            <div class="overflow-hidden transition-all max-h-0 mt-2" id="surabaya">
+                <img src="./src/img/pexels-pixabay-414144.jpg" alt="" class="object-cover w-full h-[200px]">
+                <p class="2xl:text-xl 2xl:font-medium">Jl. Kenjeran No.361, Gading, Kec. Tambaksari</p>
+            </div>
+        </div>
+        <div class="my-6">
+            <h3 data-aos="fade-right" data-aos-delay="700"
+                class="cursor-pointer py-1 bg-teal-950 text-xl hover:bg-teal-900 font-medium text-white rounded-md 2xl:text-xl 2xl:py-2"
+                onclick="outlets('malang')">Malang</h3>
+            <div class="overflow-hidden transition-all max-h-0 mt-2" id="malang">
+                <img src="./src/img/pexels-pixabay-414144.jpg" alt="" class="object-cover w-full h-[200px]">
+                <p class="2xl:text-xl 2xl:font-medium">Jl. Ronggowarsito, Klojen</p>
+            </div>
+        </div>
+    </div>
+
+
+    <h3 id="link4"
+        class="mt-16 text-center text-2xl font-medium font-Russo text-teal-950 md:text-3xl md:mt-32 lg:text-4xl">Galery
+    </h3>
+    <div class="px-4 md:px-0">
+        <div class="swiper mt-6 2xl:mt-16">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg-teal-950 p-4"><img src="./src/img/blueberries-1867398_1280.jpg" alt=""
+                        class="w-full md:w-[full] h-[300px]"></div>
+                <div class="swiper-slide bg-teal-950 p-4"><img src="./src/img/loaf-4957679_1280.jpg" alt=""
+                        class="w-full md:w-[full] h-[300px]"></div>
+                <div class="swiper-slide bg-teal-950 p-4"><img src="./src/img/meat-1155132_1280.jpg" alt=""
+                        class="w-full md:w-[full] h-[300px]"></div>
+                <div class="swiper-slide bg-teal-950 p-4"><img src="./src/img/blueberries-1867398_1280.jpg" alt=""
+                        class="w-full md:w-[full] h-[300px]"></div>
+                <div class="swiper-slide bg-teal-950 p-4"><img src="./src/img/loaf-4957679_1280.jpg" alt=""
+                        class="w-full md:w-[full] h-[300px]"></div>
+                <div class="swiper-slide bg-teal-950 p-4"><img src="./src/img/meat-1155132_1280.jpg" alt=""
+                        class="w-full md:w-[full] h-[300px]"></div>
+                <div class="swiper-slide bg-teal-950 p-4"><img src="./src/img/blueberries-1867398_1280.jpg" alt=""
+                        class="w-full md:w-[full] h-[300px]"></div>
+                <div class="swiper-slide bg-teal-950 p-4"><img src="./src/img/loaf-4957679_1280.jpg" alt=""
+                        class="w-full md:w-[full] h-[300px]"></div>
+                <div class="swiper-slide bg-teal-950 p-4"><img src="./src/img/meat-1155132_1280.jpg" alt=""
+                        class="w-full md:w-[full] h-[300px]"></div>
+                <div class="swiper-slide bg-teal-950 p-4"><img src="./src/img/blueberries-1867398_1280.jpg" alt=""
+                        class="w-full md:w-[full] h-[300px]"></div>
+                <div class="swiper-slide bg-teal-950 p-4"><img src="./src/img/loaf-4957679_1280.jpg" alt=""
+                        class="w-full md:w-[full] h-[300px]"></div>
+                <div class="swiper-slide bg-teal-950 p-4"><img src="./src/img/meat-1155132_1280.jpg" alt=""
+                        class="w-full md:w-[full] h-[300px]"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <div class="bg-teal-950 w-full h-[100px] md:h-[200px] mt-28 mb-20 bg-cover" id="parallax3"
+        style="background-image: url('./src/img/pexels-pixabay-414144.jpg');"></div>
+
+    <h3 id="link5"
+        class="mt-16 text-center text-2xl font-medium font-Russo text-teal-950 md:text-3xl md:mt-32 lg:text-4xl">Contact
+    </h3>
+    
+    <div class="mt-6 2xl:mt-16 px-4 md:px-16 2xl:px-[400px] lg:flex lg:items-center lg:gap-4 2xl:gap-24 w-full">
+        <form action="" class="bg-gradient-to-br from-teal-950 to-teal-800 lg:w-1/2 p-4">
+            <label for="nama" class="text-white 2xl:text-xl">Nama</label>
+            <input type="text" id="nama" class="w-full py-1 px-2 outline-teal-950 my-3 rounded-md">
+            <label for="email" class="text-white 2xl:text-xl">Email</label>
+            <input type="text" id="email" class="w-full py-1 px-2 outline-teal-950 my-3 rounded-md">
+            <label for="pesan" class="text-white 2xl:text-xl">Pesan</label>
+            <textarea name="" id="pesan" cols="30" rows="5"
+                class="w-full outline-teal-950 my-3 rounded-md px-2"></textarea>
+            <div class="flex justify-end">
+                <button type="submit"
+                    class="bg-teal-950 rounded-md py-1 px-3 text-white my-3 2xl:text-xl">Kirim</button>
+            </div>
+        </form>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1251832.1950430896!2d3.960499896650476!3d52.207324514840714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c3db87e4bb%3A0xb3a175ceffbd0a9f!2sBelanda!5e0!3m2!1sid!2sid!4v1693309403511!5m2!1sid!2sid"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            class="w-full h-[300px] mt-12 lg:w-1/2 lg:h-[420px] lg:mt-0"></iframe>
+    </div>
+
+
+    <footer class="bg-teal-950 w-full py-4 mt-12">
+        <h3 class="text-center text-xl my-6 font-sans font-bold text-white">WHERE TO FIND US?</h3>
+        <div class="flex justify-center gap-6">
+            <img src="./src/img/icons/whatsapp.png" alt="" class="w-[30px] md:w-[50px] h-[30px] md:h-[50px] cursor-pointer">
+            <img src="./src/img/icons/instagram.png" alt="" class="w-[30px] md:w-[50px] h-[30px] md:h-[50px] cursor-pointer">
+            <img src="./src/img/icons/twitter.png" alt="" class="w-[30px] md:w-[50px] h-[30px] md:h-[50px] cursor-pointer">
+            <img src="./src/img/icons/tiktok.png" alt="" class="w-[30px] md:w-[50px] h-[30px] md:h-[50px] cursor-pointer">
+            <img src="./src/img/icons/gmail.png" alt="" class="w-[30px] md:w-[50px] h-[30px] md:h-[50px] cursor-pointer">
+        </div>
+        <h3 class="text-center text-white texl-xl mt-12 mb-4 pt-4">&copy; RESTU ALAM 2023</h3>
+    </footer>
+
+
+    <script src="./src/swiper.min.js"></script>
+    <script src="./src/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
